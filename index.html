@@ -47,43 +47,45 @@
             <div class="div_position" >
                 <h1>Control Bar Here</h1>
                 
-                <label for="customRange2" class="form-label">Volumn Increase</label><br>
+                <!-- <label for="customRange2" class="form-label">Volumn Increase</label><br>
                 <input type="range" id="VolInc" name="VolInc" min="0" max="100" value="0" oninput="outVolInc.value=VolInc.value">                                                       
-                <output id="outVolInc" name="outVolInc" for="VolInc">0</output>
+                <output id="outVolInc" name="outVolInc" for="VolInc">0</output> -->
+                <label for="customRange2" class="form-label">Volumn Increase</label><br>
+                <form>
+                  <input type="range" id="VolInc" name="VolInc" min="0" max="100" value="0" oninput="this.form.outVolInc.value=this.value" />
+                  <input type="number" id="outVolInc" name="outVolInc" min="0" max="100" value="0" oninput="this.form.VolInc.value=this.value" />
+              </form>
                 <hr>
 
                 <label for="customRange2" class="form-label">Price Increase</label><br>
-                <input type="range" id="PriceInc" name="PriceInc" min="0" max="100" value="0" oninput="outPriceInc.value=PriceInc.value">                                                       
-                <output id="outPriceInc" name="outPriceInc" for="PriceInc">0</output>
+                <!-- <input type="range" id="PriceInc" name="PriceInc" min="0" max="100" value="0" oninput="outPriceInc.value=PriceInc.value">                                                       
+                <output id="outPriceInc" name="outPriceInc" for="PriceInc">0</output> -->
+                <form>
+                <input type="range" id="PriceInc" name="PriceInc" min="0" max="100" value="0" oninput="this.form.outPriceInc.value=this.value" />
+                <input type="number" id="outPriceInc" name="outPriceInc" min="0" max="100" value="0" oninput="this.form.PriceInc.value=this.value" />
+              </form>
                 <hr>
 
                 <label for="customRange2" class="form-label">Direct Cost Decrease</label><br>
-                <input type="range" id="DrCostDec" name="DrCostDec" min="0" max="100" value="0" oninput="outDrCostDec.value=DrCostDec.value">                                                       
-                <output id="outDrCostDec" name="outDrCostDec" for="DrCostDec">0</output>
+                <!-- <input type="range" id="DrCostDec" name="DrCostDec" min="0" max="100" value="0" oninput="outDrCostDec.value=DrCostDec.value">                                                       
+                <output id="outDrCostDec" name="outDrCostDec" for="DrCostDec">0</output> -->
+                <form>
+                  <input type="range" id="DrCostDec" name="DrCostDec" min="0" max="100" value="0" oninput="this.form.outDrCostDec.value=this.value" />
+                  <input type="number" id="outDrCostDec" name="outDrCostDec" min="0" max="100" value="0" oninput="this.form.DrCostDec.value=this.value" />
+                </form>
                 <hr>
 
                 <label for="customRange2" class="form-label">Fixed Cost Decrease</label><br>
-                <input type="range" id="InputFixCost" name="InputFixCost" min="0" max="100" value="0" oninput="fixCostDec.value=InputFixCost.value">                                                       
-                <output id="fixCostDec" name="fixCostDec" for="InputFixCost">0</output>
+                <!-- <input type="range" id="InputFixCost" name="InputFixCost" min="0" max="100" value="0" oninput="fixCostDec.value=InputFixCost.value">                                                       
+                <output id="fixCostDec" name="fixCostDec" for="InputFixCost">0</output> -->
+                <form>
+                  <input type="range" id="InputFixCost" name="InputFixCost" min="0" max="100" value="0" oninput="this.form.fixCostDec.value=this.value" />
+                  <input type="number" id="fixCostDec" name="fixCostDec" min="0" max="100" value="0" oninput="this.form.InputFixCost.value=this.value" />
+                </form>
+                
                 <hr>
                 <button type="button" onclick="buttonGo()" id="buttonGo" class="btn btn-primary btn-sm">Go!</button>
                 <button type="button" onclick="buttonReset()" id ="reset" class="btn btn-secondary btn-sm">Reset</button>
-                
-
-                <!-- Other Style Options -->
-                <hr>
-                <h3>Other Style Options</h3>
-                <label for="customRange2" class="form-label">Volumn Increase</label>
-                    <input type="range" class="form-range" value="0" min="0" max="100" id="customRange2" oninput="this.nextElementSibling.value = this.value">
-                    <output>0</output>
-                <hr>
-                <label for="customRange2" class="form-label">Fixed Cost Decrease</label>
-                <form>
-                    <input type="range" name="amountRange" min="0" max="100" value="0" oninput="this.form.amountInput.value=this.value" />
-                    <input type="number" name="amountInput" min="0" max="100" value="0" oninput="this.form.amountRange.value=this.value" />
-                </form>
-                <hr>
-            
             
             </div>
         </div>

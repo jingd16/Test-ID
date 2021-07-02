@@ -4,7 +4,7 @@
 var yaxis = 100
 function buttonGo() {
     var fixCostDec = document.getElementById("fixCostDec").value
-    var VolInc = document.getElementById("VolInc").value
+    var VolInc = document.getElementById("outVolInc").value
     var PriceInc = document.getElementById("PriceInc").value
     var DrCostDec = document.getElementById("DrCostDec").value
 
